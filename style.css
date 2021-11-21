@@ -3,7 +3,7 @@
   --peach: #dfa187;
   --cream: #fff7ed;
   --dark-gray: #27272a;
-  --gray: #52525b;
+  --medium-gray: #52525b;
 }
 
 * {
@@ -19,13 +19,41 @@
   display: flex;
 }
 
+.large-heading-size {
+  font-size: 4rem;
+}
+
 .heading-size {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .subheading-size {
   font-size: 1.2rem;
 }
+
+.btn-primary {
+  background-color: var(--amber);
+  border: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  color: var(--amber);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Navigation Bar Start */
 
 nav {
   position: sticky;
@@ -57,12 +85,44 @@ nav a {
   font-size: 1.2rem;
 }
 
-.btn-primary {
-  background-color: var(--amber);
-  border: 0px;
-  cursor: pointer;
-  border-radius: 8px;
-  padding: 0.7rem 1rem;
-  color: white;
-  font-size: 1.2rem;
+/* Navigation Bar End */
+
+/* Landing Page Start */
+
+.jumbotron {
+  background-color: var(--cream);
+  background-image: url(assets/jumbotron_vector_1.svg),
+    url(assets/jumbotron_vector_2.svg);
+  background-repeat: no-repeat;
+  background-size: 25rem, 14rem;
+  background-position: right 0px top -5rem, bottom 2.5rem left 4rem;
+  width: 100%;
 }
+
+.jumbotron-content {
+  text-align: center;
+  padding: 12rem 3rem;
+  max-width: 55rem;
+}
+
+h1 {
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.jumbotron-content p {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  color: var(--medium-gray);
+}
+
+.jumbotron-buttons {
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-buttons .btn-primary {
+  margin-right: 2rem;
+}
+
+/* Landing Page End */
