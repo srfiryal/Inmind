@@ -16,28 +16,28 @@
   </head>
 
   <body>
-    <header>
-      <nav class="flex">
-        <div class="flex logo">
-          <img src="assets/inmind_icon.svg" />
-          <h5 class="heading-size">Inmind</h5>
-        </div>
-        <ul>
-          <li><a id="nav-beranda">Beranda</a></li>
-          <li><a id="nav-tentang">Tentang</a></li>
-          <li><a id="nav-layanan">Pencegahan</a></li>
-          <li><a id="nav-edukasi">Edukasi</a></li>
-        </ul>
-        <button class="btn-primary">Dengarkan Musik</button>
-      </nav>
+    <nav class="flex">
+      <div class="flex logo">
+        <img src="assets/inmind_icon.svg" />
+        <h3 class="subheading-size extra-bold">Inmind</h5>
+      </div>
+      <ul>
+        <li><a id="nav-beranda">Beranda</a></li>
+        <li><a id="nav-tentang">Tentang</a></li>
+        <li><a id="nav-layanan">Pencegahan</a></li>
+        <li><a id="nav-edukasi">Edukasi</a></li>
+      </ul>
+      <button class="btn-primary">Dengarkan Musik</button>
+    </nav>
 
-      <div class="jumbotron">
-        <center>
+    <header>
+      <center>
+        <div class="jumbotron">
           <div class="jumbotron-content">
-            <h1 class="large-heading-size">
+            <h1 class="jumbotron-heading-size extra-bold">
               Edukasi kesehatan mental di masa pandemi
             </h1>
-            <p class="heading-size">
+            <p class="subheading-size gray-color">
               Agar stigma yang ada di masyarakat dapat dihilangkan dan penderita
               mendapatkan penanganan yang tepat.
             </p>
@@ -46,25 +46,63 @@
               <button class="btn-secondary">Dengarkan Musik</button>
             </div>
           </div>
-        </center>
-      </div>
+        </div>
+      </center>
     </header>
 
     <main>
       <center>
-        <div class="about">
+        <article class="about">
           <div class="about-title">
-            <h2>Apa itu kesehatan mental?</h2>
+            <h2 class="heading-size extra-bold">Apa itu kesehatan mental?</h2>
           </div>
           <div class="about-content">
-            <p class="heading-size">
-              Kondisi dimana individu terbebas dari segala bentuk gejala-gejala
+            <p class="subheading-size">
+              Kondisi di mana individu terbebas dari segala bentuk gejala-gejala
               gangguan mental dan batin kita merasa tenang atau tentram.
               Tuntutan hidup yang berdampak pada stress berlebih akan berdampak
               pada gangguan kesehatan mental yang lebih buruk.
             </p>
           </div>
-        </div>
+        </article>
+
+        <article class="prevention">
+          <div class="prevention-background"></div>
+          <div class="prevention-content">
+            <h2 class="heading-size extra-bold">Pencegahan</h2>
+            <p class="gray-color subheading-size">Kesehatan Mental</p>
+            <div class="flex prevention-box-container">
+              <div class="prevention-box" id="prevention-box-meditation">
+                <div class="flex prevention-box-title">
+                  <img src="assets/prevention_meditation.svg">
+                  <h4 class="semibold subheading-size">Meditasi</h4>
+                </div>
+                <p>Sisihkan waktu untuk bermeditasi di rumah. Pejamkan mata, duduk nyaman, dan dengarkan musik tenang dari kami. Rasakan ketenangan.</p>
+              </div>
+              <div class="prevention-box" id="prevention-box-thinking">
+                <div class="flex prevention-box-title">
+                  <img src="assets/prevention_thinking.svg">
+                  <h4 class="semibold subheading-size">Berpikiran Positif</h4>
+                </div>
+                <p>Berpikir positif atau rasional dapat dilakukan dengan cara memilih tontonan yang bersifat menghibur dan membatasi informasi negatif.</p>
+              </div>
+              <div class="prevention-box" id="prevention-box-exercise">
+                <div class="flex prevention-box-title">
+                  <img src="assets/prevention_exercise.svg">
+                  <h4 class="semibold subheading-size">Olahraga</h4>
+                </div>
+                <p>Olahraga untuk menjaga kesehatan dapat dilakukan minimal tiga kali seminggu selama 30 menit.</p>
+              </div>
+              <div class="prevention-box" id="prevention-box-rest">
+                <div class="flex prevention-box-title">
+                  <img src="assets/prevention_rest.svg">
+                  <h4 class="semibold subheading-size">Istirahat Cukup</h4>
+                </div>
+                <p>Salah satu cara agar jam tidur tetap teratur adalah menghentikan aktivitas satu jam sebelum waktu tidur.</p>
+              </div>
+            </div>
+          </div>
+        </article>
       </center>
     </main>
   </body>
