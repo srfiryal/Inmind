@@ -1,0 +1,68 @@
+:root {
+  --amber: #f59e0b;
+  --peach: #dfa187;
+  --cream: #fff7ed;
+  --dark-gray: #27272a;
+  --gray: #52525b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  color: #27272a;
+}
+
+.flex {
+  display: flex;
+}
+
+.heading-size {
+  font-size: 1.5rem;
+}
+
+.subheading-size {
+  font-size: 1.2rem;
+}
+
+nav {
+  position: sticky;
+  height: 5.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .logo {
+  align-items: center;
+}
+
+nav .logo h5 {
+  margin-left: 0.5rem;
+  font-weight: 800;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--amber);
+  border: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
