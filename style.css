@@ -83,6 +83,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   z-index: 1;
+  padding: 0 2.5rem;
 }
 
 nav .logo {
@@ -242,12 +243,12 @@ nav a {
   bottom: 0;
   background-color: var(--peach);
   width: 100%;
-  height: 24rem;
+  height: 26rem;
   z-index: -1;
 }
 
 .education-content {
-  padding: 4.5rem 3rem 10rem 3rem;
+  padding: 4.5rem 3rem 12rem 3rem;
 }
 
 /* Education Boxes Start */
@@ -294,3 +295,39 @@ nav a {
 /* Education Boxes End */
 
 /* Education Section End */
+
+/* Footer Start */
+
+footer {
+  align-items: center;
+  padding: 2rem 10rem;
+  background-color: var(--cream);
+}
+
+footer .logo {
+  flex: 1;
+  align-items: center;
+}
+
+footer .logo h3 {
+  margin-left: 0.5rem;
+}
+
+footer .follow-us {
+  margin: 0 2.5rem;
+  align-items: center;
+}
+
+footer .follow-us p {
+  margin-right: 1rem;
+}
+
+footer .follow-us a {
+  margin: 0 0.5rem;
+}
+
+footer .follow-us a i {
+  font-size: 1.35rem;
+}
+
+/* Footer End */
