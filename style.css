@@ -31,15 +31,23 @@
   font-size: 1.35rem;
 }
 
+.small-text-size {
+  font-size: 0.85rem;
+}
+
 .gray-color {
   color: var(--medium-gray);
 }
 
-.semibold {
+.regular-weight {
+  font-weight: 400;
+}
+
+.semibold-weight {
   font-weight: 600;
 }
 
-.extra-bold {
+.extra-bold-weight {
   font-weight: 800;
 }
 
@@ -74,6 +82,7 @@ nav {
   height: 5.5rem;
   align-items: center;
   justify-content: space-around;
+  z-index: 1;
 }
 
 nav .logo {
@@ -221,3 +230,67 @@ nav a {
 /* Prevention Boxes End */
 
 /* Prevention Section End */
+
+/* Education Section Start */
+
+.education {
+  position: relative;
+}
+
+.education-background {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--peach);
+  width: 100%;
+  height: 24rem;
+  z-index: -1;
+}
+
+.education-content {
+  padding: 4.5rem 3rem 10rem 3rem;
+}
+
+/* Education Boxes Start */
+
+.education-box-container {
+  justify-content: space-between;
+  max-width: 67.5rem;
+  margin-top: 2.5rem;
+}
+
+.education-box {
+  max-width: 31%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.education-box img {
+  object-fit: cover;
+  width: 100%;
+  background-color: var(--cream);
+}
+
+.education-box-detail {
+  margin-top: -5px;
+  text-align: left;
+  background-color: white;
+  padding: 2rem 1.5rem;
+}
+
+.education-box-detail h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-box-detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Education Boxes End */
+
+/* Education Section End */
