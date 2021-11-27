@@ -318,6 +318,7 @@
 }
 
 .education-box {
+    cursor: pointer;
     width: 31%;
     border-radius: 25px;
     overflow: hidden;
