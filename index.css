@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Jelle";
+  src: url("./fonts/Jellee-Roman.otf") format("embedded-opentype"),
+    url("./fonts/Jellee-Roman.otf") format("woff2"),
+    url("./fonts/Jellee-Roman.otf") format("woff"),
+    url("./fonts/Jellee-Roman.otf") format("truetype"),
+    url("./fonts/Jellee-Roman.otf") format("svg");
+}
+
 :root {
   --amber: #f59e0b;
   --peach: #dfa187;
@@ -18,6 +27,11 @@
 
 .flex {
   display: flex;
+}
+
+.jellee-font {
+  font-family: "Jellee", sans-serif !important;
+  font-weight: 700;
 }
 
 .jumbotron-heading-size {
@@ -46,10 +60,6 @@
 
 .semibold-weight {
   font-weight: 600;
-}
-
-.extra-bold-weight {
-  font-weight: 800;
 }
 
 .btn-primary {
