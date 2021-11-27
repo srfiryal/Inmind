@@ -143,11 +143,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .button-74 {
-        min-width: 120px;
-        padding: 0 25px;
-        font-size: 1rem;
-    }
     .absolute-center {
         width: 80%;
     }

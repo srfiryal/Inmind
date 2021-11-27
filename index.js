@@ -12,3 +12,12 @@ const jumpTo = (id) => {
         behavior: 'smooth'
     });
 }
+
+function onTapNavbar() {
+    var x = document.getElementById("navbar-responsive");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
