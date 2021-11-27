@@ -2,6 +2,7 @@
   --amber: #f59e0b;
   --peach: #dfa187;
   --cream: #fff7ed;
+  --dark-cream: #ffedd5;
   --dark-gray: #27272a;
   --medium-gray: #52525b;
 }
@@ -146,8 +147,8 @@ nav a {
   align-items: center;
 }
 
-.jumbotron-buttons .btn-primary {
-  margin-right: 2rem;
+.jumbotron-buttons button {
+  margin: 0 1rem;
 }
 
 /* Landing Page End */
@@ -188,7 +189,7 @@ nav a {
   position: absolute;
   background-color: var(--cream);
   width: 100%;
-  height: 15.5rem;
+  height: 16rem;
   z-index: -1;
 }
 
@@ -243,12 +244,12 @@ nav a {
   bottom: 0;
   background-color: var(--peach);
   width: 100%;
-  height: 26rem;
+  height: 26.5rem;
   z-index: -1;
 }
 
 .education-content {
-  padding: 4.5rem 3rem 12rem 3rem;
+  padding: 4.5rem 3rem 10rem 3rem;
 }
 
 /* Education Boxes Start */
@@ -260,15 +261,16 @@ nav a {
 }
 
 .education-box {
-  max-width: 31%;
+  width: 31%;
   border-radius: 25px;
   overflow: hidden;
+  margin-bottom: 2.5rem;
 }
 
 .education-box img {
   object-fit: cover;
   width: 100%;
-  background-color: var(--cream);
+  background-color: var(--dark-cream);
 }
 
 .education-box-detail {
@@ -276,6 +278,7 @@ nav a {
   text-align: left;
   background-color: white;
   padding: 2rem 1.5rem;
+  height: 100%;
 }
 
 .education-box-detail h6 {
@@ -300,12 +303,21 @@ nav a {
 
 footer {
   align-items: center;
-  padding: 2rem 10rem;
+  padding: 2rem 8rem;
   background-color: var(--cream);
 }
 
-footer .logo {
+footer .footer-content {
+  flex: 3;
+  justify-content: space-between;
+}
+
+footer #footer-copyright {
   flex: 1;
+  text-align: right;
+}
+
+footer .logo {
   align-items: center;
 }
 
@@ -314,7 +326,6 @@ footer .logo h3 {
 }
 
 footer .follow-us {
-  margin: 0 2.5rem;
   align-items: center;
 }
 
@@ -331,3 +342,139 @@ footer .follow-us a i {
 }
 
 /* Footer End */
+
+/* Media Queries Start */
+
+@media screen and (max-width: 960px) {
+  .jumbotron-heading-size {
+    font-size: 3.2rem;
+  }
+
+  .heading-size {
+    font-size: 2.3rem;
+  }
+
+  .subheading-size {
+    font-size: 1.3rem;
+  }
+
+  .jumbotron {
+    background-size: 16rem, 10rem;
+    background-position: right 0px top -2.5rem, bottom 1.5rem left 1.5rem;
+  }
+
+  .about-content p {
+    margin: 2rem;
+    line-height: 1.3;
+  }
+
+  .education-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-box {
+    width: 90%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 38px 2px rgba(223, 161, 135, 0.25);
+    -webkit-box-shadow: 0px 0px 38px 2px rgba(223, 161, 135, 0.25);
+    -moz-box-shadow: 0px 0px 38px 2px rgba(223, 161, 135, 0.25);
+  }
+
+  .education-box img {
+    height: 14rem;
+    object-fit: contain;
+  }
+
+  .education-background {
+    height: 24.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  footer .footer-content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  footer #footer-copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron-heading-size {
+    font-size: 2.5rem;
+  }
+
+  .heading-size {
+    font-size: 2rem;
+  }
+
+  .subheading-size {
+    font-size: 1.25rem;
+  }
+
+  .jumbotron {
+    background-image: none;
+  }
+
+  .jumbotron-content {
+    padding: 7.5rem 1.5rem;
+  }
+
+  .jumbotron-buttons {
+    flex-direction: column;
+  }
+
+  .jumbotron-buttons button {
+    margin: 0.5rem;
+    width: 100%;
+  }
+
+  .about-title {
+    width: auto;
+    padding: 1.25rem 2.5rem;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .about-content {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .about-content p {
+    margin: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .prevention-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prevention-box {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .education-box {
+    width: 100%;
+  }
+
+  .education-box img {
+    height: 12rem;
+    object-fit: cover;
+  }
+
+  footer {
+    align-items: center;
+    background-color: var(--cream);
+  }
+
+  footer .follow-us p {
+    display: none;
+  }
+}
