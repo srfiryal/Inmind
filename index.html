@@ -17,7 +17,7 @@
 <body>
     <script src="https://kit.fontawesome.com/d436d4cf93.js" crossorigin="anonymous"></script>
 
-    <nav class="flex">
+    <nav class="flex" id="navbar">
         <div class="flex logo">
             <img src="assets/inmind_icon.svg" />
             <h3 class="subheading-size jellee-font">Inmind</h5>
@@ -29,6 +29,17 @@
             <li><a id="nav-edukasi" onclick="jumpTo('education')">Edukasi</a></li>
         </ul>
         <button class="btn-primary" onclick="redirect('relax')">Rehat Sejenak</button>
+    </nav>
+
+    <nav class="topnav" id="navbar-responsive">
+        <a onclick="jumpTo('jumbotron')">Beranda</a>
+        <a onclick="jumpTo('about')">Tentang</a>
+        <a onclick="jumpTo('prevention')">Pencegahan</a>
+        <a onclick="jumpTo('education')">Edukasi</a>
+        <a id="nav-rest" onclick="redirect('relax')">Rehat Sejenak</a>
+        <a href="javascript:void(0);" class="icon" onclick="onTapNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
 
     <header>
