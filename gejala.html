@@ -11,24 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="education.css" />
     <link rel="icon" href="assets/inmind_icon.svg" />
+    <script src="index.js"></script>
     <title>Inmind</title>
 </head>
 
 <body>
     <script src="https://kit.fontawesome.com/d436d4cf93.js" crossorigin="anonymous"></script>
 
-    <nav class="flex">
+    <nav class="flex" id="navbar">
         <div class="flex logo">
             <img src="assets/inmind_icon.svg" />
             <h3 class="subheading-size jellee-font">Inmind</h5>
         </div>
         <ul>
-            <li><a id="nav-beranda">Beranda</a></li>
-            <li><a id="nav-tentang">Tentang</a></li>
-            <li><a id="nav-layanan">Pencegahan</a></li>
-            <li><a id="nav-edukasi">Edukasi</a></li>
+            <li><a id="nav-beranda" onclick="redirect('index')">Beranda</a></li>
+            <li><a id="nav-tentang" onclick="redirect('index')">Tentang</a></li>
+            <li><a id="nav-layanan" onclick="redirect('index')">Pencegahan</a></li>
+            <li><a id="nav-edukasi" onclick="redirect('index')">Edukasi</a></li>
         </ul>
-        <button class="btn-primary">Rehat Sejenak</button>
+        <button class="btn-primary" onclick="redirect('relax')">Rehat Sejenak</button>
+    </nav>
+
+    <nav class="topnav" id="navbar-responsive">
+        <a onclick="redirect('index')">Beranda</a>
+        <a onclick="redirect('index')">Tentang</a>
+        <a onclick="redirect('index')">Pencegahan</a>
+        <a onclick="redirect('index')">Edukasi</a>
+        <a id="nav-rest" onclick="redirect('relax')">Rehat Sejenak</a>
+        <a href="javascript:void(0);" class="icon" onclick="onTapNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
 
     <main>
@@ -58,7 +70,7 @@
                             </div>
                         </div>
 
-                        <div class="education-box" id="education-box-2">
+                        <div class="education-box" id="education-box-2" onclick="redirect('kondisi-mental')">
                             <img src="assets/education_2_preview.svg">
                             <div class="education-box-detail">
                                 <h4 class="subheading-size semibold-weight">Kesehatan mental di Indonesia</h4>
@@ -67,7 +79,7 @@
                             </div>
                         </div>
 
-                        <div class="education-box" id="education-box-3">
+                        <div class="education-box" id="education-box-3" onclick="redirect('hari-kesehatan-mental')">
                             <img src="assets/education_3_preview.svg">
                             <div class="education-box-detail">
                                 <h4 class="subheading-size semibold-weight">Hari kesehatan mental sedunia</h4>

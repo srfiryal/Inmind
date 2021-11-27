@@ -25,7 +25,7 @@ const startAnimation = () => {
     var hasCompleted = localStorage.getItem('hasCompleted');
 
     if (hasCompleted == 'true') {
-        startDescText.innerHTML = 'Hai, senang bertemu dengan kamu lagi! <br>Mau beristirahat sejenak?';
+        startDescText.innerHTML = 'Hai, senang bertemu denganmu lagi! <br>Mau beristirahat sejenak?';
     }
     if (isSessionCompleted) {
         startDescText.innerHTML = 'Aku harap kamu sudah mendingan!'

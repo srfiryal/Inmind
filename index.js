@@ -1,8 +1,9 @@
 const redirect = (page) => {
     page += '.html';
 
-    console.log(window.location.href);
-    let url = window.location.href.replace('index.html', page);
+    let currentLocation = window.location.href;
+    let location = currentLocation.slice(currentLocation.lastIndexOf('/') + 1);
+    let url = currentLocation.replace(location, page);
 
     window.location.href = url;
 }
