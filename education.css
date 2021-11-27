@@ -121,6 +121,7 @@ nav a {
   width: 100%;
   background-color: var(--dark-cream);
   margin: 3rem 0;
+  border-radius: 10px;
 }
 
 .main-content p {
